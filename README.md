@@ -1,4 +1,4 @@
-Lecture notes and slides posted on this site are licensed under the Creative Commons License: 
+Lecture notes  posted on this site are licensed under the Creative Commons License: 
 
 [![CC BY 4.0][cc-by-shield]][cc-by]
 

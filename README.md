@@ -7,4 +7,4 @@ Lecture notes and slides posted on this site are licensed under the Creative Com
 [cc-by]: https://creativecommons.org/licenses/by/4.0/
 [cc-by-image]: https://licensebuttons.net/l/by/4.0/88x31.png
 [cc-by-shield]: https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg
-Published with [GitHub Pages] (https://pages.github.com/)
+Published with [GitHub Pages](https://pages.github.com/)

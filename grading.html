@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discrete Math lecture notes</title>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <script type="text/javascript">
+    MathJax = {
+        tex: {
+            inlineMath: [['\\(', '\\)']],
+            displayMath: [['$$', '$$']]
+        }
+    };
+</script>
+<script type="text/javascript" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+       ul {
+    list-style-type: disc;
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+ul ul {
+    list-style-type: circle; /* For nested lists */
+    margin: 5px 0;
+    padding-left: 20px;
+}
+
+li {
+    margin: 5px 0; /* Adds spacing between list items */
+}
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 2px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        h3 {
+            margin-bottom: 0; /* Removes bottom margin */
+            padding-bottom: 0; /* Removes bottom padding */
+        }
+    <\style>
+        <style type="text/css">
+      @media (prefers-color-scheme: dark) {
+         html {
+           filter: invert(100%);
+        }
+
+        .youtube-container iframe {
+          filter: invert(100%);
+        }
+
+        .noreverse {
+          filter: invert(100%);
+        }
+      }
+      .desmos-container {
+        overflow: hidden;
+        padding-bottom: 100%;
+        position: relative;
+        height: 0;
+      }
+
+      .desmos-container iframe {
+        height: 95%;
+        width: 95%;
+        left: 0;
+        position: absolute;
+        top: 0;
+      }
+
+      .youtube-container {
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
+        height: 0;
+      }
+
+      .youtube-container iframe {
+        height: 100%;
+        width: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+      }
+    </style>
+    <script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js">
+    </script>
+</head>
+<body>
+<body>
+    <div class="container">
+        <header>
+            <h1>Mastery-Based Grading System</h1>
+            <p class="subtitle">A learning-focused approach that values growth and understanding</p>
+        </header>
+        
+        <div class="grading-system">
+            <div class="grade-level mastery">
+                <div class="level-header">
+                    <div class="level-icon">🎯</div>
+                    <div class="level-title">Level 3: Mastery</div>
+                    <div class="level-description">You've mastered the material</div>
+                </div>
+                <div class="level-content">
+                    <div class="criteria">
+                        <h3>Demonstrated by:</h3>
+                        <ul>
+                            <li>Complete understanding of core concepts</li>
+                            <li>Accurate application of principles</li>
+                            <li>Clear and precise explanations</li>
+                            <li>Effective problem-solving strategies</li>
+                            <li>Consistent high-quality work</li>
+                        </ul>
+                    </div>
+                    <div class="criteria">
+                        <h3>What it means:</h3>
+                        <ul>
+                            <li>You've met all learning objectives</li>
+                            <li>You can apply knowledge to new situations</li>
+                            <li>No significant gaps in understanding</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grade-level progress">
+                <div class="level-header">
+                    <div class="level-icon">🚧</div>
+                    <div class="level-title">Level 2: Progressing</div>
+                    <div class="level-description">Almost there - needs refinement</div>
+                </div>
+                <div class="level-content">
+                    <div class="criteria">
+                        <h3>Demonstrated by:</h3>
+                        <ul>
+                            <li>Solid understanding with minor gaps</li>
+                            <li>Most concepts applied correctly</li>
+                            <li>Small errors in execution</li>
+                            <li>Good effort with room for improvement</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pathway">
+                        <h3><i>🔄</i> Pathway to Mastery</h3>
+                        <p>You can upgrade to <strong>Level 3</strong> by:</p>
+                        <ul>
+                            <li>Submitting improved work within 1 week</li>
+                            <li>Meeting briefly during office hours</li>
+                            <li>Demonstrating understanding of feedback</li>
+                            <li>Correcting specific identified issues</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grade-level developing">
+                <div class="level-header">
+                    <div class="level-icon">🌱</div>
+                    <div class="level-title">Level 1: Developing</div>
+                    <div class="level-description">Needs significant work</div>
+                </div>
+                <div class="level-content">
+                    <div class="criteria">
+                        <h3>Demonstrated by:</h3>
+                        <ul>
+                            <li>Fundamental misunderstandings</li>
+                            <li>Inconsistent application of concepts</li>
+                            <li>Multiple significant errors</li>
+                            <li>Incomplete or missing work</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="criteria">
+                        <h3>Next Steps:</h3>
+                        <ul>
+                            <li><strong>Required</strong> office hours visit</li>
+                            <li>Revision opportunity after consultation</li>
+                            <li>Additional practice resources provided</li>
+                            <li>Personalized learning plan</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="examples">
+            <h2>Real-World Examples</h2>
+            
+            <div class="example-card">
+                <div class="grade mastery-badge">Level 3: Mastery</div>
+                <h3><i>✅</i> On a Calculus Problem</h3>
+                <p>"Your solution to the optimization problem demonstrates complete understanding. You correctly set up the constraint equation, derived the objective function, found critical points, and verified they represent the minimum. Your explanation of why this is the minimal solution is exceptionally clear."</p>
+            </div>
+            
+            <div class="example-card">
+                <div class="grade progress-badge">Level 2: Progressing</div>
+                <h3><i>🔄</i> On a Linear Algebra Assignment</h3>
+                <p>"Your approach to finding eigenvalues is mostly correct, but you made a sign error in the characteristic polynomial (step 2). Your geometric interpretation of eigenvectors is good. Resubmit with corrected polynomial calculation to demonstrate mastery."</p>
+            </div>
+            
+            <div class="example-card">
+                <div class="grade developing-badge">Level 1: Developing</div>
+                <h3><i>📚</i> On a Proof Assignment</h3>
+                <p>"Your proof shows confusion about the contrapositive method. You've confused necessary and sufficient conditions. Let's meet Thursday to review logical equivalences. After our session, you'll reattempt problems 3 and 4 with new understanding."</p>
+            </div>
+        </div>
+        
+        <div class="system-benefits">
+            <h2>Why This System Benefits You</h2>
+            <p>This approach prioritizes your learning journey over arbitrary point accumulation</p>
+            
+            <div class="benefits-container">
+                <div class="benefit">
+                    <i>🔄</i>
+                    <h3>Growth Mindset</h3>
+                    <p>Your understanding can improve with effort - initial struggles aren't final</p>
+                </div>
+                
+                <div class="benefit">
+                    <i>🎯</i>
+                    <h3>Clear Targets</h3>
+                    <p>You know exactly what mastery looks like for each concept</p>
+                </div>
+                
+                <div class="benefit">
+                    <i>💡</i>
+                    <h3>Focus on Understanding</h3>
+                    <p>No more "point chasing" - concentrate on genuine comprehension</p>
+                </div>
+                
+                <div class="benefit">
+                    <i>📈</i>
+                    <h3>Personalized Support</h3>
+                    <p>Structured pathways to help you move from Level 1 → Level 3</p>
+                </div>
+            </div>
+        </div>
+        </body>
+</html>

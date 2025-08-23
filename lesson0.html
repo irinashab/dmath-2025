@@ -65,7 +65,7 @@ li {
             margin-bottom: 0; /* Removes bottom margin */
             padding-bottom: 0; /* Removes bottom padding */
         }
-    <\style>
+    
         <style type="text/css">
       @media (prefers-color-scheme: dark) {
          html {
@@ -187,5 +187,45 @@ but without stating that, the proof is unclear and meaningless to the reader. Ad
 <p><strong>Problem</strong>:</p>
 <p>Find two positive numbers that differ by 2 and whose squares sum to 100.</p>
 <p><strong>Solution</strong>:</p>
+<p> Let the smaller number be \(x\). Since the numbers differ by 2, the larger number is \(x + 2\).<br/>
+The condition that the sum of their squares is 100 gives us the following equation:
+\[
+x^2 + (x + 2)^2 = 100
+\]
+We now solve for \(x\):
+<ol>
+<li>Expand the squared term:
+    \[
+    x^2 + (x^2 + 4x + 4) = 100
+    \]</li>
+<li>Combine like terms:
+    \[
+    2x^2 + 4x + 4 = 100
+    \]</li>
+<li>Subtract 100 from both sides to set the equation to zero:
+    \[
+    2x^2 + 4x - 96 = 0
+    \]</li>
+<li> Simplify by dividing the entire equation by 2:
+    \[
+    x^2 + 2x - 48 = 0
+    \]</li>
+<li> Factor the quadratic equation:
+    \[
+    (x + 8)(x - 6) = 0
+    \]</li>
+<li> Apply the zero-product property:
+    \[
+    x = -8 \quad \text{or} \quad x = 6
+    \]</li>
+</ol>
+</p>
+<p>
+We are asked to find <em>positive</em> numbers. Therefore, we discard the negative solution \(x = -8\).
+</p>
+<p>The smaller number is \(x = 6\). The larger number is \(x + 2 = 8\).
+</p>
+<p><strong>Verification (Sanity Check)</strong>: \(6^2 + 8^2 = 36 + 64 = 100\)</p>
+<p><strong>Final Answer</strong>: The two numbers are \(6\) and \(8\)</p>
     </body>
-</html>
+</html> 

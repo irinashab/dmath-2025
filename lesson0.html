@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ !DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,7 +17,10 @@
 <script type="text/javascript" async
     src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
-
+ <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js">
+    </script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -227,5 +230,66 @@ We are asked to find <em>positive</em> numbers. Therefore, we discard the negati
 </p>
 <p><strong>Verification (Sanity Check)</strong>: \(6^2 + 8^2 = 36 + 64 = 100\)</p>
 <p><strong>Final Answer</strong>: The two numbers are \(6\) and \(8\)</p>
+<h1 id="latex-markup">LaTeX Markup</h1>
+
+<p>Have you ever wondered how mathematical articles are typed? We do not have symbols on the keyboard for things like exponents, so \(x^2\) might not be so easy to write. \(\pi\) will certainly not appear on your keyboard, either, and good luck finding the symbol for \(\int\).</p>
+
+<p>The answer is called <strong>LaTeX</strong>. LaTeX is a markup language used to typeset academic articles. Academic articles are <strong>not</strong> written in Microsoft Word or Google Docs: while you <em>can</em> get them to understand mathematical equations, it is not standard and somewhat clunky. LaTeX is <strong>the</strong> standard. These course notes are a minor exception: in addition to LaTeX for the mathematical symbols, I am also using GitHub Pages to write HTML and MathJax (a Javascript library that renders LaTeX on the web).</p>
+
+<h2 class="no_toc" id="setting-up">Setting up</h2>
+
+<p>There are several ways to set up and install LaTeX. If you prefer not to install anything on your local computer, you can create a <strong>free</strong> account on <a href="https://www.overleaf.com">Overleaf.com</a>. This is the simplest way to get up and running.</p>
+
+<p>If you prefer to use LaTeX on your own computer, you will need two things:</p>
+
+<ol>
+  <li>A LaTeX <em>distribution</em>: either <a href="https://www.tug.org/mactex/" target=_blank>MacTex</a>, on Mac OS X, or <a href="https://miktex.org/about" target=_blank>MikTex</a> for Windows.</li>
+  <li>A LaTeX <em>editor</em>: my preference is <a href="https://www.texstudio.org" target=_blank>texstudio</a>. MikTex and MacTex both come with LaTeX editors, and so you can use those if you like (MikTex comes with TeXworks, MacTex comes with TeXShop), though I prefer TeXstudio.</li>
+</ol>
+
+<p>Once you have written your document in LaTeX, saved as a .tex file, you will be able to compile it to a PDF.</p>
+
+<h2 class="no_toc" id="basic-formatting">Basic Formatting</h2>
+
+<p>A simple LaTeX file may look something like:</p>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\documentclass</span><span class="p">{</span>article<span class="p">}</span>
+
+<span class="c">% This is a comment</span>
+<span class="c">% This part of the file is called the preamble.</span>
+<span class="c">% Title / author / date can go here</span>
+<span class="c">% Can also include packages that we need to use to render the math correctly</span>
+<span class="k">\title</span><span class="p">{</span>This is my title<span class="p">}</span>
+<span class="k">\author</span><span class="p">{</span>My Name<span class="p">}</span>
+
+<span class="nt">\begin{document}</span>
+
+<span class="c">% This is the main body of the document.</span>
+<span class="k">\maketitle</span>
+
+Paragraph 1.
+
+Paragraph 2.
+
+<span class="nt">\end{document}</span>
+</code></pre></div></div>
+
+<p>It can be overwhelming to start a LaTeX document from scratch, so feel free to use the homework files I post to start. I include several packages, macros and definitions in my preamble.</p>
+
+<h2 class="no_toc" id="formatting-math">Formatting Math</h2>
+
+<p>To format math in a LaTeX file, you use dollar signs to start and end your mathematical notations. Technically this is referred to as “in-line” math mode: for example, to write the sentence “If  \(a \neq 0\), then \(ax^2 + bx + c\) is a quadratic polynomial”, you use the following LaTeX syntax:</p>
+
+<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code>If <span class="p">$</span><span class="nb">a </span><span class="nv">\neq</span><span class="nb"> </span><span class="m">0</span><span class="p">$</span>, then <span class="p">$</span><span class="nb">ax</span><span class="p">^</span><span class="m">2</span><span class="nb"> </span><span class="o">+</span><span class="nb"> bx </span><span class="o">+</span><span class="nb"> c</span><span class="p">$</span> is a quadratic polynomial.
+</code></pre></div></div>
+
+<p>This is “in-line”, since the math is formatted in the middle of the sentence. There is also “displayed” math mode: you can use two dollar signs ($$) to start and end, and that will display the mathematical content on its own line.</p>
+
+<p>As you can see, there are certain commands we use to put in mathematical notation. For exponents / superscripts we use the carat (^), for “not equals” ($\neq) we use “\neq”. There are many good guides to finding basic LaTeX commands for mathematical notation, you can find them in the <a href="#further-reading">further reading</a> section.</p>
+
+<h2 class="no_toc" id="further-reading">Further reading</h2>
+
+
+
     </body>
-</html> 
+</html><

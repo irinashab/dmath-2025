@@ -1,4 +1,4 @@
- !DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -112,18 +112,29 @@ li {
         position: absolute;
         top: 0;
       }
+      .math-box {
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin: 10px 0;
+  font-family: monospace;
+  white-space: pre-wrap;
+}
+
     </style>
     <script id="MathJax-script" async
             src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js">
     </script>
 </head>
     <body>
+    <h1 class="no_toc" id="discrete-mathematics-lesson-0-intro-to-course-mathematical-writing-latex">Discrete Mathematics Lesson 0</h1>
 <ol id="markdown-toc">
   <li><a href="#warm-up" id="markdown-toc-warm-up">Warm-Up</a></li>
   <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
   <li><a href="#mathematical-writing" id="markdown-toc-mathematical-writing">Mathematical writing</a></li>
+
   <li><a href="#latex-markup" id="markdown-toc-latex-markup">LaTeX Markup</a></li>
-  <li><a href="#exit-ticket-0-due-monday-january-23" id="markdown-toc-exit-ticket-0-due-monday-january-23">Exit Ticket 0: Due Monday, January 23</a></li>
+  <li><a href="#departure-pass-0-due-tuesday-sept-2" id="markdown-toc-departure-pass-0-due-tuesday-sept-2">Departure Pass 0: Due Tuesday, September 2</a></li>
 </ol>
         <h1 id="warm-up">Warm-Up</h1>
 
@@ -230,6 +241,7 @@ We are asked to find <em>positive</em> numbers. Therefore, we discard the negati
 </p>
 <p><strong>Verification (Sanity Check)</strong>: \(6^2 + 8^2 = 36 + 64 = 100\)</p>
 <p><strong>Final Answer</strong>: The two numbers are \(6\) and \(8\)</p>
+<p>You can read more about mathematical writing in <a href="https://math.hmc.edu/su/wp-content/uploads/sites/10/2019/11/good-math-writing.pdf" target=_blank>GUIDELINES FOR GOOD MATHEMATICAL WRITING</a> by Francis Su</p>
 <h1 id="latex-markup">LaTeX Markup</h1>
 
 <p>Have you ever wondered how mathematical articles are typed? We do not have symbols on the keyboard for things like exponents, so \(x^2\) might not be so easy to write. \(\pi\) will certainly not appear on your keyboard, either, and good luck finding the symbol for \(\int\).</p>
@@ -253,7 +265,7 @@ We are asked to find <em>positive</em> numbers. Therefore, we discard the negati
 
 <p>A simple LaTeX file may look something like:</p>
 
-<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\documentclass</span><span class="p">{</span>article<span class="p">}</span>
+<div class="math-box"><div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">\documentclass</span><span class="p">{</span>article<span class="p">}</span>
 
 <span class="c">% This is a comment</span>
 <span class="c">% This part of the file is called the preamble.</span>
@@ -272,7 +284,7 @@ Paragraph 1.
 Paragraph 2.
 
 <span class="nt">\end{document}</span>
-</code></pre></div></div>
+</code></pre></div></div></div>
 
 <p>It can be overwhelming to start a LaTeX document from scratch, so feel free to use the homework files I post to start. I include several packages, macros and definitions in my preamble.</p>
 
@@ -280,16 +292,47 @@ Paragraph 2.
 
 <p>To format math in a LaTeX file, you use dollar signs to start and end your mathematical notations. Technically this is referred to as “in-line” math mode: for example, to write the sentence “If  \(a \neq 0\), then \(ax^2 + bx + c\) is a quadratic polynomial”, you use the following LaTeX syntax:</p>
 
-<div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code>If <span class="p">$</span><span class="nb">a </span><span class="nv">\neq</span><span class="nb"> </span><span class="m">0</span><span class="p">$</span>, then <span class="p">$</span><span class="nb">ax</span><span class="p">^</span><span class="m">2</span><span class="nb"> </span><span class="o">+</span><span class="nb"> bx </span><span class="o">+</span><span class="nb"> c</span><span class="p">$</span> is a quadratic polynomial.
-</code></pre></div></div>
+<div class="math-box"><div class="language-latex highlighter-rouge"><div class="highlight"><pre class="highlight"><code>If <span class="p">$</span><span class="nb">a </span><span class="nv">\neq</span><span class="nb"> </span><span class="m">0</span><span class="p">$</span>, then <span class="p">$</span><span class="nb">ax</span><span class="p">^</span><span class="m">2</span><span class="nb"> </span><span class="o">+</span><span class="nb"> bx </span><span class="o">+</span><span class="nb"> c</span><span class="p">$</span> is a quadratic polynomial.
+</code></pre></div></div></div>
 
 <p>This is “in-line”, since the math is formatted in the middle of the sentence. There is also “displayed” math mode: you can use two dollar signs ($$) to start and end, and that will display the mathematical content on its own line.</p>
 
-<p>As you can see, there are certain commands we use to put in mathematical notation. For exponents / superscripts we use the carat (^), for “not equals” ($\neq) we use “\neq”. There are many good guides to finding basic LaTeX commands for mathematical notation, you can find them in the <a href="#further-reading">further reading</a> section.</p>
+<p>As you can see, there are certain commands we use to put in mathematical notation. For exponents / superscripts we use the carat (^), for “not equals” ($\neq) we use “\neq”. There are many good guides to finding basic LaTeX commands for mathematical notation, you can find them below.</p>
 
 <h2 class="no_toc" id="further-reading">Further reading</h2>
+<p>These first two are essential: you <strong>must</strong> check these out.</p>
+
+<ul>
+  <li><a href="https://guides.nyu.edu/c.php?g=601858&amp;p=4168084">NYU: Guide to LaTeX</a>. This link is quite thorough and has many other links to other resources to help you get set up. The <a href="https://guides.nyu.edu/c.php?g=601858&amp;p=4168135">resources</a> section on the site has lots of good links to finding LaTeX commands and symbols.</li>
+  <li><a href="https://www.cs.princeton.edu/courses/archive/spr10/cos433/Latex/latex-guide.pdf">David Xiao, “A Beginner’s Guide to LaTeX” (Princeton)</a> This is a short (6 page) description of the basics of LaTeX.</li>
+  <li><a href="https://tobi.oetiker.ch/lshort/lshort.pdf">The Not So Short Introduction to LaTeX 2e</a> This 150+ page reference manual describes many of the core functionalities of LaTeX.</li>
+</ul>
+
+<h1 id="departure-pass-0-due-tuesday-sept-2">Departure Pass 0: Due Tuesday, September 2</h1>
+
+<ol>
+  <li>Get set up using LaTeX (either method).</li>
+  <li> You will get an email from me with a link to GitHub Classroom assignment. Use <a href="https://irinashab.github.io/dmath-2025/submissions.html" target=_blank>GitHub Classroom Submission Guide</a> to setup your GitHub account, accept your assignment, and download dpass0.tex.</li>
+  <li>Edit dpass0.tex, replace the sections for your name, year and major.</li>
+  <li>
+    <p>In the rest of the document, re-write the following argument that if \(a\) is even and \(b\) is a multiple of \(a\) , then \(b\) is also even:</p>
+
+\[\begin{align}
+a = 2k \\
+b = na = n(2k) = 2(nk) \\
+b = 2x, x = nk \\
+b \text{ is even!}
+\end{align}\]
+  </li>
+  <li>Compile the document to a PDF and upload the PDF to GitHub Classroom.</li>
+</ol>
+
+      </section>
+    </div>
+
+    <!-- 
 
 
 
     </body>
-</html><
+</html>

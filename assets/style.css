@@ -1,0 +1,120 @@
+body {
+    background-color: #F8FBF1; /* Cornsilk background */
+    color: #353839; /* Dark text for readability */
+    font-family: Arial, sans-serif; /* Change font */
+    margin: 0 auto;
+            max-width: 800px;
+            padding: 20px;
+}
+
+h1 {
+    color: #353839; /* onyx color for headings */
+    text-align: center;
+}
+ h2, h3 {
+    color: #2F4F4F; /*dark slate gray  color for headings */
+}
+ 
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+ table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 2px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        h3 {
+            margin-bottom: 0; /* Removes bottom margin */
+            padding-bottom: 0; /* Removes bottom padding */
+        }
+
+    /* Base token palette (subtle, print‑friendly) */
+    :root {
+      --think-bg: #fffdf7;           /* warm paper */
+      --think-fg: #222;              /* text */
+      --think-muted: #6b7280;        /* secondary text */
+      --think-radius: 14px;          /* corners */
+      --think-shadow: 0 2px 8px rgba(0,0,0,.06);
+      --think-padding: 1rem 1.1rem 1.1rem;
+      --think-gap: .6rem;
+      --think-title-size: 1.05rem;
+      --think-border: 3px;           /* left rail */
+    }
+
+    /* Dark mode (optional) */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --think-bg: #181a1b;
+        --think-fg: #e5e7eb;
+        --think-muted: #9ca3af;
+        --think-shadow: 0 2px 10px rgba(0,0,0,.35);
+      }
+    }
+
+    /* Base component */
+    .think {
+      --accent: #6b7280;            /* default accent if no course modifier */
+      background: var(--think-bg);
+      color: var(--think-fg);
+      border-left: var(--think-border) solid var(--accent);
+      border-radius: var(--think-radius);
+      box-shadow: var(--think-shadow);
+      padding: var(--think-padding);
+      margin: 1.2rem 0;
+    }
+
+    .think-header {
+      display: flex;
+      align-items: center;
+      gap: var(--think-gap);
+      margin-bottom: .4rem;
+      font-size: var(--think-title-size);
+      font-weight: 650;
+      letter-spacing: .2px;
+    }
+
+    .think-header svg { height: 1.15rem; width: 1.15rem; flex: 0 0 auto; }
+    .think-header .label { color: var(--think-fg); }
+    .think-body { margin-top: .3rem; }
+    .think-body p { margin: .35rem 0; }
+    .think-body ol, .think-body ul { margin: .4rem 0 .1rem 1.25rem; }
+
+    /* Compact variant */
+    .think.thin { padding: .65rem .8rem; border-left-width: 4px; }
+    .think.thin .think-header { margin-bottom: .2rem; }
+
+    /* Course modifiers (pick your accents) */
+    .think.dm   { --accent: #7c3aed; }  /* Discrete Math – grape */
+    .think.cs1  { --accent: #0ea5e9; }  /* CS1 – azure */
+    .think.calc2{ --accent: #f59e0b; }  /* Calc 2 – amber */
+
+    /* Print tweaks */
+    @media print {
+      .think { box-shadow: none; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    }
+
+    /* Optional: callout title pill */
+    .pill {
+      display: inline-block;
+      padding: .12rem .5rem;
+      border-radius: 999px;
+      background: color-mix(in oklab, var(--accent) 20%, white);
+      color: var(--think-fg);
+      font-size: .85em;
+      margin-left: .2rem;
+    }

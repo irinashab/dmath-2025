@@ -1,27 +1,150 @@
+/* =========================
+   Global styles
+   ========================= */
 body {
-    background-color: #F8FBF1; /* Cornsilk background */
-    color: #353839; /* Dark text for readability */
-    font-family: Arial, sans-serif; /* Change font */
+    font-family: Arial, sans-serif;
+    line-height: 1.8;
     margin: 0 auto;
-            max-width: 800px;
-            padding: 20px;
+    max-width: 900px;
+    padding: 20px;
 }
 
-h1 {
-    color: #353839; /* onyx color for headings */
+code { white-space: pre-wrap; }
+span.smallcaps { font-variant: small-caps; }
+span.underline { text-decoration: underline; }
+div.column { display: inline-block; vertical-align: top; width: 50%; }
+div.hanging-indent { margin-left: 1.5em; text-indent: -1.5em; }
+ul.task-list { list-style: none; }
+
+/* =========================
+   Headings
+   ========================= */
+h1 { text-align: center; }
+h2 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+/* =========================
+   Table of Contents
+   ========================= */
+.toc {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+.toc h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+.toc ul {
+    list-style: none;
+    padding-left: 0;
+}
+.toc li {
+    margin: 5px 0;
+}
+.toc a {
+    text-decoration: none;
+    color: #007BFF;
+}
+.toc a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   Quote block (Cantor, etc.)
+   ========================= */
+.quote {
+    font-style: italic;
+    color: #555;
+    border-left: 4px solid #9b59b6;
+    padding-left: 20px;
+    margin: 20px 0;
+    background-color: #f8f9fa;
+    padding: 15px 20px;
+    border-radius: 0 8px 8px 0;
+}
+
+/* =========================
+   Answer block
+   ========================= */
+.answer {
+    background: #eef7ff;
+    border-left: 4px solid #007BFF;
+    padding: 6px 10px;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+/* =========================
+   Layout (sticky footer compromise)
+   ========================= */
+html, body {
+    height: 100%;/* make page take full height */
+    display: flex;
+    flex-direction: column;
+}
+main { flex: 1; }  /* main content grows to fill space */
+
+/* =========================
+   Footer
+   ========================= */
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 15px;
+    border-top: 2px solid #ddd;
+    color: #7f8c8d;
+    font-size: 0.9em;
+    background: #f9f9f9;
+}
+.footer a {
+    color: #007BFF;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   Utility
+   ========================= */
+.back-to-top {
+    font-size: 0.9em;
+    text-align: right;
+}
+/* =========================
+   Header / Course Banner
+   ========================= */
+header#title-block-header {
+    background: linear-gradient(90deg, #007BFF, #0056b3); /* blue gradient */
+    color: white;
+    padding: 20px;
+    border-radius: 0 0 12px 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    margin-bottom: 25px;
     text-align: center;
 }
- h2, h3 {
-    color: #2F4F4F; /*dark slate gray  color for headings */
+
+header#title-block-header h1 {
+    margin: 0;
+    font-size: 1.8em;
 }
- 
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin: 10px 0;
-        }
+
+ul ul {
+    list-style-type: circle; /* For nested lists */
+    margin: 5px 0;
+    padding-left: 20px;
+}
+
+li {
+    margin: 5px 0; /* Adds spacing between list items */
+}
+
         a {
             color: #007BFF;
             text-decoration: none;
@@ -29,7 +152,7 @@ h1 {
         a:hover {
             text-decoration: underline;
         }
- table {
+        table {
             border-collapse: collapse;
             width: 100%;
         }
@@ -42,79 +165,77 @@ h1 {
             margin-bottom: 0; /* Removes bottom margin */
             padding-bottom: 0; /* Removes bottom padding */
         }
+    
+        <style type="text/css">
+      @media (prefers-color-scheme: dark) {
+         html {
+           filter: invert(100%);
+        }
 
-    /* Base token palette (subtle, print‑friendly) */
-    :root {
-      --think-bg: #fffdf7;           /* warm paper */
-      --think-fg: #222;              /* text */
-      --think-muted: #6b7280;        /* secondary text */
-      --think-radius: 14px;          /* corners */
-      --think-shadow: 0 2px 8px rgba(0,0,0,.06);
-      --think-padding: 1rem 1.1rem 1.1rem;
-      --think-gap: .6rem;
-      --think-title-size: 1.05rem;
-      --think-border: 3px;           /* left rail */
-    }
+        .youtube-container iframe {
+          filter: invert(100%);
+        }
 
-    /* Dark mode (optional) */
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --think-bg: #181a1b;
-        --think-fg: #e5e7eb;
-        --think-muted: #9ca3af;
-        --think-shadow: 0 2px 10px rgba(0,0,0,.35);
+        .noreverse {
+          filter: invert(100%);
+        }
       }
-    }
+      .desmos-container {
+        overflow: hidden;
+        padding-bottom: 100%;
+        position: relative;
+        height: 0;
+      }
 
-    /* Base component */
-    .think {
-      --accent: #6b7280;            /* default accent if no course modifier */
-      background: var(--think-bg);
-      color: var(--think-fg);
-      border-left: var(--think-border) solid var(--accent);
-      border-radius: var(--think-radius);
-      box-shadow: var(--think-shadow);
-      padding: var(--think-padding);
-      margin: 1.2rem 0;
-    }
+      .desmos-container iframe {
+        height: 95%;
+        width: 95%;
+        left: 0;
+        position: absolute;
+        top: 0;
+      }
 
-    .think-header {
-      display: flex;
-      align-items: center;
-      gap: var(--think-gap);
-      margin-bottom: .4rem;
-      font-size: var(--think-title-size);
-      font-weight: 650;
-      letter-spacing: .2px;
-    }
+      .youtube-container {
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
+        height: 0;
+      }
 
-    .think-header svg { height: 1.15rem; width: 1.15rem; flex: 0 0 auto; }
-    .think-header .label { color: var(--think-fg); }
-    .think-body { margin-top: .3rem; }
-    .think-body p { margin: .35rem 0; }
-    .think-body ol, .think-body ul { margin: .4rem 0 .1rem 1.25rem; }
-
-    /* Compact variant */
-    .think.thin { padding: .65rem .8rem; border-left-width: 4px; }
-    .think.thin .think-header { margin-bottom: .2rem; }
-
-    /* Course modifiers (pick your accents) */
-    .think.dm   { --accent: #7c3aed; }  /* Discrete Math – grape */
-    .think.cs1  { --accent: #0ea5e9; }  /* CS1 – azure */
-    .think.calc2{ --accent: #f59e0b; }  /* Calc 2 – amber */
-
-    /* Print tweaks */
-    @media print {
-      .think { box-shadow: none; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-    }
-
-    /* Optional: callout title pill */
-    .pill {
-      display: inline-block;
-      padding: .12rem .5rem;
-      border-radius: 999px;
-      background: color-mix(in oklab, var(--accent) 20%, white);
-      color: var(--think-fg);
-      font-size: .85em;
-      margin-left: .2rem;
-    }
+      .youtube-container iframe {
+        height: 100%;
+        width: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+      }
+      .math-box {
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin: 10px 0;
+  font-family: monospace;
+  white-space: pre-wrap;
+  
+   .logic-types {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 25px 0;
+        }
+        .logic-type {
+            flex: 1;
+            min-width: 250px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            border-top: 4px solid #3498db;
+        }
+        .logic-type h4 {
+            margin-top: 0;
+            color: #2c3e50;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+}

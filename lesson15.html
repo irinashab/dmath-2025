@@ -70,38 +70,14 @@
 <div class="figure">
   <div style="text-align: center;">
     <!-- Simple graph representation -->
-    <svg width="200" height="200" viewBox="0 0 200 200">
-      <circle cx="100" cy="50" r="15" fill="white" stroke="black"/>
-      <circle cx="50" cy="100" r="15" fill="white" stroke="black"/>
-      <circle cx="100" cy="150" r="15" fill="white" stroke="black"/>
-      <circle cx="150" cy="100" r="15" fill="white" stroke="black"/>
-      <line x1="100" y1="50" x2="50" y2="100" stroke="black"/>
-      <line x1="50" y1="100" x2="100" y2="150" stroke="black"/>
-      <line x1="100" y1="150" x2="150" y2="100" stroke="black"/>
-      <line x1="150" y1="100" x2="100" y2="50" stroke="black"/>
-    </svg>
+    <img src="assets/images/g0.png" alt="A simple graph with 4 vertices and 4 edge" style="max-width: 50%;">
   </div>
   <p class="caption">Figure 3: A simple graph with 4 vertices and 4 edges</p>
 </div>
 
 <div class="figure">
   <div style="text-align: center;">
-    <!-- Multigraph representation -->
-    <svg width="200" height="200" viewBox="0 0 200 200">
-      <circle cx="100" cy="50" r="15" fill="white" stroke="black"/>
-      <circle cx="50" cy="150" r="15" fill="white" stroke="black"/>
-      <circle cx="150" cy="150" r="15" fill="white" stroke="black"/>
-      <circle cx="100" cy="100" r="15" fill="white" stroke="black"/>
-      
-      <!-- Multiple edges between nodes -->
-      <path d="M 100,50 C 75,75 75,125 50,150" stroke="black" fill="none"/>
-      <path d="M 100,50 C 125,75 125,125 150,150" stroke="black" fill="none"/>
-      <path d="M 100,50 C 75,50 50,75 50,150" stroke="black" fill="none"/>
-      <path d="M 100,50 C 125,50 150,75 150,150" stroke="black" fill="none"/>
-      <line x1="100" y1="50" x2="100" y2="100" stroke="black"/>
-      <line x1="50" y1="150" x2="100" y2="100" stroke="black"/>
-      <line x1="150" y1="150" x2="100" y2="100" stroke="black"/>
-    </svg>
+   <img src="assets/images/gk7.png" alt=" A multi-graph with 4 vertices and 7 edges." style="max-width: 50%;">
   </div>
   <p class="caption">Figure 4: A multi-graph with 4 vertices and 7 edges. Does it look familiar?</p>
 </div>
@@ -115,23 +91,7 @@
 <div class="figure">
   <div style="text-align: center;">
     <!-- Directed graph representation -->
-    <svg width="300" height="200" viewBox="0 0 300 200">
-      <circle cx="50" cy="100" r="15" fill="white" stroke="black"/>
-      <circle cx="150" cy="100" r="15" fill="white" stroke="black"/>
-      <circle cx="150" cy="50" r="15" fill="white" stroke="black"/>
-      
-      <!-- Directed edges with arrows -->
-      <defs>
-        <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-          <polygon points="0 0, 10 3.5, 0 7" fill="black"/>
-        </marker>
-      </defs>
-      
-      <path d="M 65,100 C 100,80 120,80 135,100" stroke="black" fill="none" marker-end="url(#arrowhead)"/>
-      <path d="M 135,100 C 120,120 100,120 65,100" stroke="black" fill="none" marker-end="url(#arrowhead)"/>
-      <line x1="50" y1="100" x2="150" y2="50" stroke="black" marker-end="url(#arrowhead)"/>
-      <circle cx="150" cy="50" r="5" fill="black"/>
-    </svg>
+     <img src="assets/images/g1.png" alt="Directed labeled graph." style="max-width: 50%;">
   </div>
   <p class="caption">Figure 5: Directed labeled graph</p>
 </div>
@@ -154,13 +114,7 @@
 <div class="figure">
   <div style="text-align: center;">
     <!-- Degree sequence example -->
-    <svg width="200" height="100" viewBox="0 0 200 100">
-      <circle cx="50" cy="50" r="15" fill="white" stroke="black"/>
-      <circle cx="100" cy="50" r="15" fill="white" stroke="black"/>
-      <circle cx="150" cy="50" r="15" fill="white" stroke="black"/>
-      <path d="M 65,50 C 75,30 85,30 95,50" stroke="black" fill="none"/>
-      <path d="M 105,50 C 115,30 125,30 135,50" stroke="black" fill="none"/>
-    </svg>
+     <img src="assets/images/g2.png" alt="Graph with degree sequence (1,2,1)" style="max-width: 50%;">
   </div>
   <p class="caption">Figure 6: Graph with degree sequence (1,2,1)</p>
 </div>
@@ -184,20 +138,12 @@
     <li>The fourth one is also impossible. If our vertices have no self-loops, and one vertex has degree 3, it must be connected to three others. That would mean none of the vertices can have degree 0.</li>
   </ul>
 </p>
-</details>
+
 
 <div class="figure">
   <div style="text-align: center;">
     <!-- Graph with degree sequence (1,2,2,1) -->
-    <svg width="250" height="100" viewBox="0 0 250 100">
-      <circle cx="50" cy="50" r="15" fill="white" stroke="black"/>
-      <circle cx="100" cy="50" r="15" fill="white" stroke="black"/>
-      <circle cx="150" cy="50" r="15" fill="white" stroke="black"/>
-      <circle cx="200" cy="50" r="15" fill="white" stroke="black"/>
-      <line x1="65" y1="50" x2="85" y2="50" stroke="black"/>
-      <line x1="115" y1="50" x2="135" y2="50" stroke="black"/>
-      <line x1="165" y1="50" x2="185" y2="50" stroke="black"/>
-    </svg>
+   <img src="assets/images/g3.png" alt="Graph with degree sequence (1,2,2,1)" style="max-width: 50%;">
   </div>
   <p class="caption">Figure 7: Graph with degree sequence (1,2,2,1)</p>
 </div>
@@ -205,19 +151,11 @@
 <div class="figure">
   <div style="text-align: center;">
     <!-- Graph with degree sequence (2,2,2,2) -->
-    <svg width="200" height="200" viewBox="0 0 200 200">
-      <circle cx="50" cy="50" r="15" fill="white" stroke="black"/>
-      <circle cx="150" cy="50" r="15" fill="white" stroke="black"/>
-      <circle cx="50" cy="150" r="15" fill="white" stroke="black"/>
-      <circle cx="150" cy="150" r="15" fill="white" stroke="black"/>
-      <line x1="50" y1="50" x2="150" y2="50" stroke="black"/>
-      <line x1="50" y1="50" x2="50" y2="150" stroke="black"/>
-      <line x1="150" y1="50" x2="150" y2="150" stroke="black"/>
-      <line x1="50" y1="150" x2="150" y2="150" stroke="black"/>
-    </svg>
+   <img src="assets/images/g4.png" alt="Graph with degree sequence (2,2,2,2)" style="max-width: 50%;">
   </div>
   <p class="caption">Figure 8: Possible graph for degree sequence (2,2,2,2)</p>
 </div>
+</details>
 </section>
 
 <section id="quick-theorems">
@@ -279,22 +217,7 @@
 <div class="figure">
   <div style="text-align: center;">
     <!-- Eulerian exercise graph -->
-    <svg width="250" height="250" viewBox="0 0 250 250">
-      <circle cx="125" cy="50" r="15" fill="white" stroke="black"/>
-      <circle cx="75" cy="125" r="15" fill="white" stroke="black"/>
-      <circle cx="125" cy="200" r="15" fill="white" stroke="black"/>
-      <circle cx="175" cy="125" r="15" fill="white" stroke="black"/>
-      <circle cx="50" cy="75" r="15" fill="white" stroke="black"/>
-      
-      <line x1="125" y1="50" x2="75" y2="125" stroke="black"/>
-      <line x1="75" y1="125" x2="125" y2="200" stroke="black"/>
-      <line x1="125" y1="200" x2="175" y2="125" stroke="black"/>
-      <line x1="175" y1="125" x2="125" y2="50" stroke="black"/>
-      <line x1="125" y1="50" x2="125" y2="200" stroke="black"/>
-      <line x1="125" y1="50" x2="50" y2="75" stroke="black"/>
-      <line x1="125" y1="200" x2="50" y2="75" stroke="black"/>
-    </svg>
-  </div>
+   <img src="assets/images/g5.png" alt="Graph for Eulerian path/circuit exercise" style="max-width: 50%;">
   <p class="caption">Figure 9: Graph for Eulerian path/circuit exercise</p>
 </div>
 
@@ -307,8 +230,20 @@
   <br>
   Starts at A (deg 3, odd), ends at E (deg 3, odd)
   <br><br>
+  <div class="figure">
+  <div style="text-align: center;">
+    <!-- Eulerian path -->
+   <img src="assets/images/g6.png" alt=" Eulerian path" style="max-width: 50%;">
+  <p class="caption">Figure 10: Graph for Eulerian path</p>
+</div>
   <strong>No Eulerian Circuit:</strong> 2 vertices have odd degree. Eulerian circuit requires ALL vertices to have even degree.
 </p>
+<div class="figure">
+  <div style="text-align: center;">
+    <!--no Eulerian circuit -->
+   <img src="assets/images/g7.png" alt="No Eulerian circuit " style="max-width: 50%;">
+  <p class="caption">Figure 11: No Eulerian circuit</p>
+</div>
 </details>
 </section>
 
@@ -326,74 +261,17 @@
 <div class="figure">
   <div style="text-align: center;">
     <!-- Hamiltonian path -->
-    <svg width="300" height="200" viewBox="0 0 300 200">
-      <circle cx="50" cy="100" r="15" fill="white" stroke="black"/>
-      <circle cx="150" cy="100" r="15" fill="white" stroke="black"/>
-      <circle cx="250" cy="100" r="15" fill="white" stroke="black"/>
-      <circle cx="100" cy="50" r="15" fill="white" stroke="black"/>
-      <circle cx="200" cy="50" r="15" fill="white" stroke="black"/>
-      
-      <!-- All possible edges in light gray -->
-      <line x1="50" y1="100" x2="150" y2="100" stroke="lightgray"/>
-      <line x1="150" y1="100" x2="250" y2="100" stroke="lightgray"/>
-      <line x1="250" y1="100" x2="200" y2="50" stroke="lightgray"/>
-      <line x1="200" y1="50" x2="100" y2="50" stroke="lightgray"/>
-      <line x1="100" y1="50" x2="50" y2="100" stroke="lightgray"/>
-      <line x1="50" y1="100" x2="250" y2="100" stroke="lightgray"/>
-      <line x1="150" y1="100" x2="100" y2="50" stroke="lightgray"/>
-      <line x1="150" y1="100" x2="200" y2="50" stroke="lightgray"/>
-      
-      <!-- Hamiltonian path in red -->
-      <defs>
-        <marker id="redarrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-          <polygon points="0 0, 10 3.5, 0 7" fill="red"/>
-        </marker>
-      </defs>
-      
-      <line x1="65" y1="100" x2="135" y2="100" stroke="red" stroke-width="2" marker-end="url(#redarrow)"/>
-      <line x1="150" y1="100" x2="100" y2="50" stroke="red" stroke-width="2" marker-end="url(#redarrow)"/>
-      <line x1="100" y1="50" x2="200" y2="50" stroke="red" stroke-width="2" marker-end="url(#redarrow)"/>
-      <line x1="200" y1="50" x2="250" y2="100" stroke="red" stroke-width="2" marker-end="url(#redarrow)"/>
-    </svg>
+    <img src="assets/images/g8.png" alt=" Hamiltonian path" style="max-width: 50%;">
   </div>
-  <p class="caption">Figure 10: Hamiltonian path (in red)</p>
+  <p class="caption">Figure 12: Hamiltonian path (in red)</p>
 </div>
 
 <div class="figure">
   <div style="text-align: center;">
     <!-- Hamiltonian circuit -->
-    <svg width="250" height="250" viewBox="0 0 250 250">
-      <circle cx="125" cy="50" r="15" fill="white" stroke="black"/>
-      <circle cx="75" cy="125" r="15" fill="white" stroke="black"/>
-      <circle cx="125" cy="200" r="15" fill="white" stroke="black"/>
-      <circle cx="175" cy="125" r="15" fill="white" stroke="black"/>
-      <circle cx="50" cy="75" r="15" fill="white" stroke="black"/>
-      
-      <!-- All possible edges in light gray -->
-      <line x1="125" y1="50" x2="75" y2="125" stroke="lightgray"/>
-      <line x1="75" y1="125" x2="125" y2="200" stroke="lightgray"/>
-      <line x1="125" y1="200" x2="175" y2="125" stroke="lightgray"/>
-      <line x1="175" y1="125" x2="125" y2="50" stroke="lightgray"/>
-      <line x1="125" y1="50" x2="125" y2="200" stroke="lightgray"/>
-      <line x1="125" y1="50" x2="50" y2="75" stroke="lightgray"/>
-      <line x1="75" y1="125" x2="50" y2="75" stroke="lightgray"/>
-      <line x1="125" y1="200" x2="50" y2="75" stroke="lightgray"/>
-      
-      <!-- Hamiltonian circuit in blue -->
-      <defs>
-        <marker id="bluearrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
-          <polygon points="0 0, 10 3.5, 0 7" fill="blue"/>
-        </marker>
-      </defs>
-      
-      <line x1="125" y1="50" x2="75" y2="125" stroke="blue" stroke-width="2" marker-end="url(#bluearrow)"/>
-      <line x1="75" y1="125" x2="50" y2="75" stroke="blue" stroke-width="2" marker-end="url(#bluearrow)"/>
-      <line x1="50" y1="75" x2="125" y2="200" stroke="blue" stroke-width="2" marker-end="url(#bluearrow)"/>
-      <line x1="125" y1="200" x2="175" y2="125" stroke="blue" stroke-width="2" marker-end="url(#bluearrow)"/>
-      <line x1="175" y1="125" x2="125" y2="50" stroke="blue" stroke-width="2" marker-end="url(#bluearrow)"/>
-    </svg>
+    <img src="assets/images/g9.png" alt=" Hamiltonian circuit" style="max-width: 50%;">
   </div>
-  <p class="caption">Figure 11: Hamiltonian circuit (in blue)</p>
+  <p class="caption">Figure 13: Hamiltonian circuit (in blue)</p>
 </div>
 </section>
 
@@ -409,58 +287,9 @@
 <div class="figure">
   <div style="text-align: center;">
     <!-- Complete graphs -->
-    <svg width="600" height="200" viewBox="0 0 600 200">
-      <!-- K3 -->
-      <g transform="translate(100, 100)">
-        <circle cx="0" cy="-40" r="15" fill="white" stroke="black"/>
-        <circle cx="-35" cy="20" r="15" fill="white" stroke="black"/>
-        <circle cx="35" cy="20" r="15" fill="white" stroke="black"/>
-        <line x1="0" y1="-40" x2="-35" y2="20" stroke="black"/>
-        <line x1="-35" y1="20" x2="35" y2="20" stroke="black"/>
-        <line x1="35" y1="20" x2="0" y2="-40" stroke="black"/>
-        <text x="0" y="80">\(K_3\)</text>
-      </g>
-      
-      <!-- K4 -->
-      <g transform="translate(300, 100)">
-        <circle cx="0" cy="-40" r="15" fill="white" stroke="black"/>
-        <circle cx="-40" cy="0" r="15" fill="white" stroke="black"/>
-        <circle cx="40" cy="0" r="15" fill="white" stroke="black"/>
-        <circle cx="0" cy="40" r="15" fill="white" stroke="black"/>
-        <line x1="0" y1="-40" x2="-40" y2="0" stroke="black"/>
-        <line x1="0" y1="-40" x2="40" y2="0" stroke="black"/>
-        <line x1="0" y1="-40" x2="0" y2="40" stroke="black"/>
-        <line x1="-40" y1="0" x2="40" y2="0" stroke="black"/>
-        <line x1="-40" y1="0" x2="0" y2="40" stroke="black"/>
-        <line x1="40" y1="0" x2="0" y2="40" stroke="black"/>
-        <text x="0" y="80">\(K_4\)</text>
-      </g>
-      
-      <!-- K5 -->
-      <g transform="translate(500, 100)">
-        <circle cx="0" cy="-40" r="15" fill="white" stroke="black"/>
-        <circle cx="-38" cy="-12" r="15" fill="white" stroke="black"/>
-        <circle cx="-24" cy="32" r="15" fill="white" stroke="black"/>
-        <circle cx="24" cy="32" r="15" fill="white" stroke="black"/>
-        <circle cx="38" cy="-12" r="15" fill="white" stroke="black"/>
-        
-        <!-- All edges -->
-        <line x1="0" y1="-40" x2="-38" y2="-12" stroke="black"/>
-        <line x1="0" y1="-40" x2="-24" y2="32" stroke="black"/>
-        <line x1="0" y1="-40" x2="24" y2="32" stroke="black"/>
-        <line x1="0" y1="-40" x2="38" y2="-12" stroke="black"/>
-        <line x1="-38" y1="-12" x2="-24" y2="32" stroke="black"/>
-        <line x1="-38" y1="-12" x2="24" y2="32" stroke="black"/>
-        <line x1="-38" y1="-12" x2="38" y2="-12" stroke="black"/>
-        <line x1="-24" y1="32" x2="24" y2="32" stroke="black"/>
-        <line x1="-24" y1="32" x2="38" y2="-12" stroke="black"/>
-        <line x1="24" y1="32" x2="38" y2="-12" stroke="black"/>
-        
-        <text x="0" y="80">\(K_5\)</text>
-      </g>
-    </svg>
+    <img src="assets/images/g10.png" alt=" Complete graphs" style="max-width: 50%;">
   </div>
-  <p class="caption">Figure 12: Complete graphs \(K_3\), \(K_4\), and \(K_5\)</p>
+  <p class="caption">Figure 14: Complete graphs \(K_3\), \(K_4\), and \(K_5\)</p>
 </div>
 
 <p>Counting edges, you can determine that \(K_3\) has 3 edges, \(K_4\) has 6, and \(K_5\) has 10. Notice that to go from \(n\) to \(n+1\), you add in one vertex and connect it to all of the previous vertices. That is, \(K_{n+1}\) has \(n\) more edges than \(K_n\) (so \(K_4\) has 3 more edges than \(K_3\), \(K_5\) has 4 more than \(K_4\), etc.)</p>
@@ -473,28 +302,14 @@
 <section id="cycle-graphs">
 <h2>Cycle Graphs</h2>
 
-<p>A cycle graph on \(n\) vertices is a simple, \(n\)-vertex cycle. That is, it has vertices \(v_0, v_1, \dots, v_{n-1}\), and edges between \(v_0\) and \(v_1\), \(v_1\) and \(v_2\), \dots, \(v_{n-2}\) and \(v_{n-1}\), and \(v_{n-1}\) and \(v_0\).</p>
+<p>A cycle graph on \(n\) vertices is a simple, \(n\)-vertex cycle. That is, it has vertices \(v_0, v_1, ..., v_{n-1}\), and edges between \(v_0\) and \(v_1\), \(v_1\) and \(v_2\), ..., \(v_{n-2}\) and \(v_{n-1}\), and \(v_{n-1}\) and \(v_0\).</p>
 
 <div class="figure">
   <div style="text-align: center;">
     <!-- C6 cycle graph -->
-    <svg width="250" height="250" viewBox="0 0 250 250">
-      <circle cx="125" cy="50" r="15" fill="teal" stroke="black" opacity="0.4"/>
-      <circle cx="75" cy="100" r="15" fill="teal" stroke="black" opacity="0.4"/>
-      <circle cx="75" cy="150" r="15" fill="teal" stroke="black" opacity="0.4"/>
-      <circle cx="125" cy="200" r="15" fill="teal" stroke="black" opacity="0.4"/>
-      <circle cx="175" cy="150" r="15" fill="teal" stroke="black" opacity="0.4"/>
-      <circle cx="175" cy="100" r="15" fill="teal" stroke="black" opacity="0.4"/>
-      
-      <line x1="125" y1="50" x2="75" y2="100" stroke="black"/>
-      <line x1="75" y1="100" x2="75" y2="150" stroke="black"/>
-      <line x1="75" y1="150" x2="125" y2="200" stroke="black"/>
-      <line x1="125" y1="200" x2="175" y2="150" stroke="black"/>
-      <line x1="175" y1="150" x2="175" y2="100" stroke="black"/>
-      <line x1="175" y1="100" x2="125" y2="50" stroke="black"/>
-    </svg>
+     <img src="assets/images/g11.png" alt=" Complete graphs" style="max-width: 50%;">
   </div>
-  <p class="caption">Figure 13: The cycle graph \(C_6\)</p>
+  <p class="caption">Figure 15: Complete graph \(C_6\)</p>
 </div>
 
 <p><strong>Exercise:</strong> Draw \(C_3\), \(C_4\), \(C_5\), \(C_6\). How many edges are in each of these graphs?</p>
@@ -510,40 +325,9 @@
 <div class="figure">
   <div style="text-align: center;">
     <!-- K3,5 bipartite graph -->
-    <svg width="300" height="300" viewBox="0 0 300 300">
-      <!-- Left partition (3 vertices) - Blue -->
-      <circle cx="50" cy="75" r="15" fill="lightblue" stroke="black"/>
-      <circle cx="50" cy="150" r="15" fill="lightblue" stroke="black"/>
-      <circle cx="50" cy="225" r="15" fill="lightblue" stroke="black"/>
-      
-      <!-- Right partition (5 vertices) - Red -->
-      <circle cx="200" cy="30" r="15" fill="pink" stroke="black"/>
-      <circle cx="200" cy="90" r="15" fill="pink" stroke="black"/>
-      <circle cx="200" cy="150" r="15" fill="pink" stroke="black"/>
-      <circle cx="200" cy="210" r="15" fill="pink" stroke="black"/>
-      <circle cx="200" cy="270" r="15" fill="pink" stroke="black"/>
-      
-      <!-- Draw all edges between partitions -->
-      <line x1="65" y1="75" x2="185" y2="30" stroke="gray"/>
-      <line x1="65" y1="75" x2="185" y2="90" stroke="gray"/>
-      <line x1="65" y1="75" x2="185" y2="150" stroke="gray"/>
-      <line x1="65" y1="75" x2="185" y2="210" stroke="gray"/>
-      <line x1="65" y1="75" x2="185" y2="270" stroke="gray"/>
-      
-      <line x1="65" y1="150" x2="185" y2="30" stroke="gray"/>
-      <line x1="65" y1="150" x2="185" y2="90" stroke="gray"/>
-      <line x1="65" y1="150" x2="185" y2="150" stroke="gray"/>
-      <line x1="65" y1="150" x2="185" y2="210" stroke="gray"/>
-      <line x1="65" y1="150" x2="185" y2="270" stroke="gray"/>
-      
-      <line x1="65" y1="225" x2="185" y2="30" stroke="gray"/>
-      <line x1="65" y1="225" x2="185" y2="90" stroke="gray"/>
-      <line x1="65" y1="225" x2="185" y2="150" stroke="gray"/>
-      <line x1="65" y1="225" x2="185" y2="210" stroke="gray"/>
-      <line x1="65" y1="225" x2="185" y2="270" stroke="gray"/>
-    </svg>
+    <img src="assets/images/g12.png" alt=" The bipartite graph" style="max-width: 50%;">
   </div>
-  <p class="caption">Figure 14: The bipartite graph \(K_{3,5}\)</p>
+  <p class="caption">Figure 16: The bipartite graph \(K_{3,5}\)</p>
 </div>
 
 <p>Not every bipartite graph is one of these "complete" bipartite graphs. For example, let's look at the cycle \(C_6\) again:</p>
@@ -551,21 +335,7 @@
 <div class="figure">
   <div style="text-align: center;">
     <!-- C6 bipartite example -->
-    <svg width="250" height="250" viewBox="0 0 250 250">
-      <circle cx="125" cy="50" r="15" fill="teal" stroke="black" opacity="0.4"/>
-      <circle cx="75" cy="100" r="15" fill="teal" stroke="black" opacity="0.4"/>
-      <circle cx="75" cy="150" r="15" fill="teal" stroke="black" opacity="0.4"/>
-      <circle cx="125" cy="200" r="15" fill="teal" stroke="black" opacity="0.4"/>
-      <circle cx="175" cy="150" r="15" fill="teal" stroke="black" opacity="0.4"/>
-      <circle cx="175" cy="100" r="15" fill="teal" stroke="black" opacity="0.4"/>
-      
-      <line x1="125" y1="50" x2="75" y2="100" stroke="black"/>
-      <line x1="75" y1="100" x2="75" y2="150" stroke="black"/>
-      <line x1="75" y1="150" x2="125" y2="200" stroke="black"/>
-      <line x1="125" y1="200" x2="175" y2="150" stroke="black"/>
-      <line x1="175" y1="150" x2="175" y2="100" stroke="black"/>
-      <line x1="175" y1="100" x2="125" y2="50" stroke="black"/>
-    </svg>
+     <img src="assets/images/g11.png" alt=" Complete graph C6" style="max-width: 50%;">
   </div>
 </div>
 
